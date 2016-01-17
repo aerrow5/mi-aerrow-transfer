@@ -14,3 +14,11 @@ nullmailer
 # colorlog + remote logging
 ccze
 rsyslog
+# transfer needs
+gmake 
+gcc47 
+unrar 
+p7zip 
+libxml2 
+unzip
+
