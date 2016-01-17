@@ -16,6 +16,11 @@ pkgin -fy up
 pkgin -y fug
 pkgin -y clean
 
+echo "* Create users"
+groupadd -g 500 nzbget
+useradd -m -c "NZBGet User" -u 500 -g nzbget nzbget
+passwd -N nzbget
+
 echo "* Create rsyslog.d folder for extra configuration files"
 mkdir -p /opt/local/etc/rsyslog.d
 
