@@ -12,7 +12,8 @@ echo "* Configuring image specific packages.";
 
 # standard pkgin update:
 pkg_admin rebuild
-pkgin -y up
+pkgin -fy up
+pkgin -y fug
 pkgin -y clean
 
 echo "* Create rsyslog.d folder for extra configuration files"
