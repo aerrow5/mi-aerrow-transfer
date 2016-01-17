@@ -1,0 +1,7 @@
+name="aerrow-transfer"
+organization="Joyent"
+brand="Instance"
+version="1.0.0"
+description="Description for image aerrow-transfer"
+homepage="http://wiki.joyent.com/jpc2/aerrow-transfer+Instance"
+users="root admin"
