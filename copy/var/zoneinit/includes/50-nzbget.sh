@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This script was tested with v.16.4 so get that by default
-version = '16.4'
+version='16.4'
 
 pushd /tmp
 wget --no-check-certificate https://github.com/nzbget/nzbget/archive/v${version}.zip
