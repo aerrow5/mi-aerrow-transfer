@@ -14,4 +14,11 @@ make install
 make install-conf
 popd
 
+# in addition change config a little bit:
+sed -i.bak 's/^\(OutputMode=\).*/\1loggable/' /opt/local/etc/nzbget.conf
+# and give right permission:
+chown root:nzbget /opt/local/etc/nzbget.conf
+chmod g+w /opt/local/etc/nzbget.conf
+
+# launch this beautiful app:
 svcadm enable nzbget
