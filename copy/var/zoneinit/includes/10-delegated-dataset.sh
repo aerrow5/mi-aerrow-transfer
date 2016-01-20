@@ -8,7 +8,7 @@ if ! zfs list $DDS > /dev/null; then
 fi
 
 zfs set mountpoint=/data $DDS
-zfs set compression=lz4 $DDS
+zfs set compression=on $DDS
 
 # enable access to all 
 chmod ag+w /data
