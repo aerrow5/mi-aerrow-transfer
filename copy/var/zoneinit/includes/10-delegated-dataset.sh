@@ -10,5 +10,8 @@ fi
 zfs set mountpoint=/data $DDS
 zfs set compression=lz4 $DDS
 
+# enable access to all 
+chmod ag+w /data
+
 
 
